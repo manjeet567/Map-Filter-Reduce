@@ -41,3 +41,13 @@ const maxoutput=arr.reduce(function(acc,curr){
     return acc
 },0)
 console.log('maxoutput:', maxoutput)
+
+
+//----------------------------------------///
+  
+
+let avrage=arr.reduce(function(acc,curr){
+      acc=acc+curr;
+      return acc;
+},0)
+console.log('avarge of arr is ',avrage/arr.length)

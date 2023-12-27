@@ -2,7 +2,11 @@ let arr=[
     {firstName:"manjeet",lastName:"choudhary",age:22},
     {firstName:"kaushal",lastName:"jaat",age:18},
     {firstName:"gourav",lastName:"khardiya",age:15},
-    {firstName:"pankaj",lastName:"jaangid",age:23}
+    {firstName:"pankaj",lastName:"jangid",age:23},
+    {firstName:"rahul",lastName:"tomer",age:21},
+    {firstName:"manish",lastName:"saini",age:23},
+    {firstName:"raj",lastName:"jangid",age:25},
+    {firstName:"akash",lastName:"sharma",age:24}
 ]
 
 
@@ -44,3 +48,20 @@ return acc;
 },[])
 
 console.log('ffff',outPut)
+
+//-----------------------------------------test---------------------------------------------//
+let aa=arr.filter((x)=>x.age>20).map((x)=>{
+    return {
+        "firstName":x.firstName,
+        'age':x.age
+    }
+})
+console.log('test:',aa)
+
+//--------------------------------------//
+
+let test1=arr.filter((x)=>x.age>20).reduce(function(acc,curr){
+  acc++
+  return acc
+},0)
+console.log('test1',test1)
